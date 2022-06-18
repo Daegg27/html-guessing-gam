@@ -1,11 +1,14 @@
 /* styles.css */
 body {
+  background-image: url(https://img.freepik.com/free-vector/binary-code-stream-digital-data-codes-hacker-coding-crypto-matrix-numbers-flow-digitally-blue-screen-abstract-background_102902-991.jpg);
   font-family: "Helvetica Neue", sans-serif;
   font-weight: 300;
   text-align: center;
 }
 
-h1 {
-  font-weight: 400
+.game-name {
+  color: yellow;
+  font-weight: 900;
+  padding-top: 10px;
 }
 
