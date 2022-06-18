@@ -12,9 +12,25 @@
   </head>
   <body>
     <div>
-      <h1 class="game-name">Lets play the number guessing game</h1>
-    </div>
+        <div class="py-2"></div>
+        <div class="row">
+          <div class="col-sm-3"></div>
+          <div class="col-sm-6"><h1 class="game-name">Lets play the number guessing game</h1></div>
+          <div class="col-sm-3"></div>
 
+        </div>
+    </div>
+    <div class="main-div">
+      <div class="input-div container">
+        <h1>The computer has selected a number between 1 and 100<br> give it your best guess!</h1>
+        <div class="py-5"></div>
+        <form onSubmit="GuessingGame(event)">
+          <input type="text" pattern="[0-9]+" class="textbox-guess" placeholder="Guess between 1-100">
+        </form>
+        <h5 id="guessCount">Current Guesses:</h5>
+      </div>
+    </div>
+    
 
   </body>
 </html>

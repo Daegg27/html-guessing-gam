@@ -7,8 +7,28 @@ body {
 }
 
 .game-name {
-  color: yellow;
+  color: ghostwhite;
+  border: 1px solid white;
   font-weight: 900;
-  padding-top: 10px;
+  font-size: 30px;
+  background-color: black;
+}
+
+.main-div {
+  color: lightgray;
+  padding-top: 75px;
+  font-weight: 500;
+}
+
+.input-div {
+  background-image: url(https://cdn.wallpapersafari.com/88/33/jOKqHx.jpg);
+  background-size: cover;
+  min-height: 900px;
+  border: 2px solid yellow;
+}
+
+.textbox-guess {
+  height: 50px;
+  font-size: 20px;
 }
 
