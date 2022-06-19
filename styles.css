@@ -32,3 +32,30 @@ body {
   font-size: 20px;
 }
 
+#first-button {
+  position: relative;
+  bottom: 2px;
+}
+
+#inner-instructions {
+  background-color: black;
+  z-index: 100;
+}
+
+#guessCount {
+  background-color: black;
+  width: 200px;;
+  position: relative;
+  right: 50px;
+}
+
+.generic-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#incorrect {
+  color: red;
+  font-weight: 900;
+}

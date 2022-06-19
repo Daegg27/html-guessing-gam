@@ -1,14 +1,14 @@
 <!DOCTYPE html>
   <head>
     <meta charset="utf-8">
-    <title>TITLE</title>
+    <title>Go Blue</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Your link to your CSS file -->
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="styles.css">
     <!-- Your Javascript file goes here -->
-    <script src="./app.js" async defer></script>
+    <script src="app.js" async defer></script>
   </head>
   <body>
     <div>
@@ -22,12 +22,19 @@
     </div>
     <div class="main-div">
       <div class="input-div container">
-        <h1>The computer has selected a number between 1 and 100<br> give it your best guess!</h1>
+        <div id="inner-instructions">
+          <h1>The computer has selected a number between 1 and 100<br> give it your best guesses!</h1>
+        </div>
         <div class="py-5"></div>
         <form onSubmit="GuessingGame(event)">
           <input type="text" pattern="[0-9]+" class="textbox-guess" placeholder="Guess between 1-100">
+          <button class="btn btn-dark btn-lg" id="first-button" type="submit">Guess!</button>
         </form>
-        <h5 id="guessCount">Current Guesses:</h5>
+        <div id="incorrect" class="container mt-2"></div>
+        <div class="py-5"></div>
+        <div id="guessHolder" class="generic-div vstack">
+          <h5 id="guessCount">Current Guesses:</h5>
+        </div>
       </div>
     </div>
     
