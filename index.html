@@ -26,14 +26,14 @@
           <h1>The computer has selected a number between 1 and 100<br> give it your best guesses!</h1>
         </div>
         <div class="py-5"></div>
-        <form onSubmit="GuessingGame(event)">
-          <input type="text" pattern="[0-9]+" class="textbox-guess" placeholder="Guess between 1-100">
+        <form onsubmit="PlayGame(event)">
+          <input type="text" pattern="[0-9]+" id="input" class="textbox-guess" autocomplete="off" placeholder="Guess between 1-100">
           <button class="btn btn-dark btn-lg" id="first-button" type="submit">Guess!</button>
         </form>
         <div id="incorrect" class="container mt-2"></div>
         <div class="py-5"></div>
         <div id="guessHolder" class="generic-div vstack">
-          <h5 id="guessCount">Current Guesses:</h5>
+          <h5 id="guessCount"></h5>
         </div>
       </div>
     </div>
