@@ -16,7 +16,8 @@ function PlayGame(event){
     let guessNotifier = document.getElementById("guessCount")
     let guessCount = document.getElementById("guessHolder")
     let input = document.getElementById("input")
-
+    
+    // Wanted to use a helper function 
     if (guess > 100){
         guess = 100
     }
