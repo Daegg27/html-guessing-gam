@@ -16,6 +16,8 @@ function PlayGame(event){
     let guessNotifier = document.getElementById("guessCount")
     let guessCount = document.getElementById("guessHolder")
     let input = document.getElementById("input")
+    let restartButton = document.getElementById("restart-button")
+    let submitButton = document.getElementById("submit-button")
     
     // Wanted to use a helper function 
     if (guess > 100){
@@ -42,6 +44,8 @@ function PlayGame(event){
         }
         incorrect.innerText = "That's correct! Nice work!";
         guessNotifier.innerText += `\n${guess}: Spot on!`
+        restartButton.removeAttribute("hidden")
+        submitButton.setAttribute("disabled", "")
     }
     count++;
     input.value = "";

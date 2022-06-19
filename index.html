@@ -13,12 +13,11 @@
   <body>
     <div>
         <div class="py-2"></div>
-        <div class="row">
-          <div class="col-sm-3"></div>
-          <div class="col-sm-6"><h1 class="game-name">Lets play the number guessing game</h1></div>
-          <div class="col-sm-3"></div>
-
-        </div>
+          <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6"><h1 class="game-name">Lets play the number guessing game</h1></div>
+            <div class="col-sm-3"></div>
+          </div>
     </div>
     <div class="main-div">
       <div class="input-div container">
@@ -28,7 +27,8 @@
         <div class="py-5"></div>
         <form onsubmit="PlayGame(event)">
           <input type="text" pattern="[0-9]+" id="input" class="textbox-guess" autocomplete="off" placeholder="Guess between 1-100">
-          <button class="btn btn-dark btn-lg" id="first-button" type="submit">Guess!</button>
+          <button id="submit-button" class="btn btn-dark btn-lg" id="first-button" type="submit">Guess!</button>
+          <button id="restart-button" class="btn btn-dark btn-lg" hidden="hidden" id="first-button" onclick="location.reload(true)">Restart</button>
         </form>
         <div id="incorrect" class="container mt-2"></div>
         <div class="py-5"></div>
@@ -36,6 +36,7 @@
           <h5 id="guessCount"></h5>
         </div>
       </div>
+      <footer class="fixed-bottom" id="copyright-color">&copy; 2022 Dalton Eggleston</footer>
     </div>
     
 

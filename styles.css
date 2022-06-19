@@ -61,3 +61,13 @@ body {
   position: relative;
   right: 50px;
 }
+
+#copyright-color {
+  color: red;
+  font-weight: bold;
+}
+
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
