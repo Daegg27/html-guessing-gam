@@ -2,11 +2,11 @@ let count = 0;
 let randomNumber = Math.floor(Math.random() * 100)
 
 // Couldn't get this to work
-function HelperFunction(guess){
-    if (guess > 100){
-        guess = 100
-    }
-}
+// function HelperFunction(guess){
+//     if (guess > 100){
+//         guess = 100
+//     }
+// }
 
 function PlayGame(event){
     event.preventDefault()
